@@ -9,9 +9,9 @@ sudo: required
 services:
     - docker 
 bofore_install:
-    docker login -u "manshaehsan" -p "loyelopassword!"
-    dcoker build -t manshaehsan/knight:tCI
-    docker run -p 3000:3000 manshaehsan/knight:tCI
-    docker ps 
-    docker push manshaehsan/knight:tCI
+   - docker login -u "manshaehsan" -p "loyelopassword!"
+   - dcoker build -t manshaehsan/knight:tCI
+   - docker run -p 3000:3000 manshaehsan/knight:tCI
+   - docker ps 
+   - docker push manshaehsan/knight:tCI
     
