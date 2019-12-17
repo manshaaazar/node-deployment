@@ -1,17 +1,10 @@
 os: linux
-language: node_js
-node_js:
-    - "stable"
-cache:
-    directories:
-        - "node_modules"
 sudo: required
 services:
     - docker 
 bofore_install:
    - docker login -u "manshaehsan" -p "loyelopassword!"
    - docker build -t manshaehsan/knight:tCI .
-   - docker run -p 3000:3000 manshaehsan/knight:tCI
    - docker ps 
    - docker push manshaehsan/knight:tCI
     
