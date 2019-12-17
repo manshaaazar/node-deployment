@@ -3,6 +3,4 @@ node_js:
     - "stable"
 cache:
     directories:
-        - "node_modules
-before_install:
-    npm start
+        - "node_modules"
