@@ -7,10 +7,10 @@ services:
     - docker 
 env:
  global:
-   - USERNAME = manshaehsan
-   - PASS="loyelopassword!" 
+   - DOCKER_USERNAME=manshaehsan
+   - DOCKER_PASSWORD=loyelopassword! 
 bofore_install:
-   - docker login -u $USERNAME -p $PASS
+   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
    - docker build -t manshaehsan/knight:tCI .
    - docker ps 
    - docker push manshaehsan/knight:tCI
