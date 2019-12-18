@@ -5,7 +5,7 @@ node_js:
 sudo: required
 env:
   - USERNAME = manshaehsan
-  - PASS =loyelopassword! 
+  - PASS=loyelopassword! 
 services:
     - docker 
 bofore_install:
