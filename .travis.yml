@@ -3,10 +3,13 @@ language: node_js
 node_js:
   "stable"
 sudo: required
+env:
+ - USERNAME = "manshaehsan"
+ - PASS = "loyelopassword!" 
 services:
     - docker 
 bofore_install:
-   - docker login -u "manshaehsan" -p "loyelopassword!"
+   - docker login -u $USERNAME -p $PASS
    - docker build -t manshaehsan/knight:tCI .
    - docker ps 
    - docker push manshaehsan/knight:tCI
