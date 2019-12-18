@@ -4,8 +4,8 @@ node_js:
   "stable"
 sudo: required
 env:
- - USERNAME = manshaehsan
- - PASS = loyelopassword! 
+  - USERNAME = manshaehsan
+  - PASS =loyelopassword! 
 services:
     - docker 
 bofore_install:
